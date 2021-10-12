@@ -328,8 +328,25 @@ int main() {
 			cout << "Reps: " << reps6 << "." << endl;
 
 			break;
+		default: cout << "Sorry, this program can only handle 6 exercises at the moment. Please try again and enter a number between 1 and 6" << endl;
 	    }
+		break;
+		case 2:
+			cout << "How far did you run today? (enter # of miles)" << endl;
+
+			cin >> distance;
+
+			cout << "How many minutes were you running?" << endl;
+
+			cin >> runTime;
+
+			cout << endl << "Distance: " << distance << " Miles" << endl;
+			cout << "Duration: " << runTime << " Minutes" << endl;
+ 
+			break;
+		default: cout << "Please try again and enter either 1 or 2." << endl;
 	}
+	
 	system("pause");
 	return(0);
 }
