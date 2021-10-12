@@ -53,7 +53,7 @@ int main() {
 
 			cin >> weight1 >> reps1;
 
-			cout << "Exercise: " << workout1 << "." << endl;
+			cout << endl << "Exercise: " << workout1 << "." << endl;
 			cout << "Weight: " << weight1 << "." << endl;
 			cout << "Reps: " << reps1 << "." << endl;
 
@@ -77,7 +77,7 @@ int main() {
 
 		cin >> weight2 >> reps2;
 
-		cout << "Exercise: " << workout1 << "." << endl;
+		cout << endl << "Exercise: " << workout1 << "." << endl;
 		cout << "Weight: " << weight1 << "." << endl;
 		cout << "Reps: " << reps1 << "." << endl;
 
@@ -125,6 +125,207 @@ int main() {
 			cout << "Exercise: " << workout3 << "." << endl;
 			cout << "Weight: " << weight3 << "." << endl;
 			cout << "Reps: " << reps3 << "." << endl;
+
+			break;
+		case 4:
+			cout << "What was your first exercise?" << endl;
+
+			cin.ignore();
+			getline(cin, workout1);
+
+			cout << "Please enter weight followed by repitions, separated by a space." << endl;
+
+			cin >> weight1 >> reps1;
+
+			cout << "Please enter your second exercise." << endl;
+
+			cin.ignore();
+			getline(cin, workout2);
+
+			cout << "Please enter weight followed by repitions, separated by a space." << endl;
+
+			cin >> weight2 >> reps2;
+
+			cout << "Please enter your third exercise." << endl;
+
+			cin.ignore();
+			getline(cin, workout3);
+
+			cout << "Please enter weight followed by repitions, separated by a space." << endl;
+
+			cin >> weight3 >> reps3;
+
+			cout << "Please enter your fourth exercise." << endl;
+
+			cin.ignore();
+			getline(cin, workout4);
+
+			cout << "Please enter weight followed by repitions, separated by a space." << endl;
+
+			cin >> weight4 >> reps4;
+
+			cout << endl << "Exercise: " << workout1 << "." << endl;
+			cout << "Weight: " << weight1 << "." << endl;
+			cout << "Reps: " << reps1 << "." << endl;
+
+			cout << "Exercise: " << workout2 << "." << endl;
+			cout << "Weight: " << weight2 << "." << endl;
+			cout << "Reps: " << reps2 << "." << endl;
+
+			cout << "Exercise: " << workout3 << "." << endl;
+			cout << "Weight: " << weight3 << "." << endl;
+			cout << "Reps: " << reps3 << "." << endl;
+
+			cout << "Exercise: " << workout4 << "." << endl;
+			cout << "Weight: " << weight4 << "." << endl;
+			cout << "Reps: " << reps4 << "." << endl;
+
+			break;
+		case 5:
+			cout << "What was your first exercise?" << endl;
+
+			cin.ignore();
+			getline(cin, workout1);
+
+			cout << "Please enter weight followed by repitions, separated by a space." << endl;
+
+			cin >> weight1 >> reps1;
+
+			cout << "Please enter your second exercise." << endl;
+
+			cin.ignore();
+			getline(cin, workout2);
+
+			cout << "Please enter weight followed by repitions, separated by a space." << endl;
+
+			cin >> weight2 >> reps2;
+
+			cout << "Please enter your third exercise." << endl;
+
+			cin.ignore();
+			getline(cin, workout3);
+
+			cout << "Please enter weight followed by repitions, separated by a space." << endl;
+
+			cin >> weight3 >> reps3;
+
+			cout << "Please enter your fourth exercise." << endl;
+
+			cin.ignore();
+			getline(cin, workout4);
+
+			cout << "Please enter weight followed by repitions, separated by a space." << endl;
+
+			cin >> weight4 >> reps4;
+
+			cout << "Please enter your fifth exercise." << endl;
+
+			cin.ignore();
+			getline(cin, workout5);
+
+			cout << "Please enter weight followed by repitions, separated by a space." << endl;
+
+			cin >> weight5 >> reps5;
+
+			cout << endl << "Exercise: " << workout1 << "." << endl;
+			cout << "Weight: " << weight1 << "." << endl;
+			cout << "Reps: " << reps1 << "." << endl;
+
+			cout << "Exercise: " << workout2 << "." << endl;
+			cout << "Weight: " << weight2 << "." << endl;
+			cout << "Reps: " << reps2 << "." << endl;
+
+			cout << "Exercise: " << workout3 << "." << endl;
+			cout << "Weight: " << weight3 << "." << endl;
+			cout << "Reps: " << reps3 << "." << endl;
+
+			cout << "Exercise: " << workout4 << "." << endl;
+			cout << "Weight: " << weight4 << "." << endl;
+			cout << "Reps: " << reps4 << "." << endl;
+
+			cout << "Exercise: " << workout5 << "." << endl;
+			cout << "Weight: " << weight5 << "." << endl;
+			cout << "Reps: " << reps5 << "." << endl;
+
+			break;
+		case 6:
+			cout << "What was your first exercise?" << endl;
+
+			cin.ignore();
+			getline(cin, workout1);
+
+			cout << "Please enter weight followed by repitions, separated by a space." << endl;
+
+			cin >> weight1 >> reps1;
+
+			cout << "Please enter your second exercise." << endl;
+
+			cin.ignore();
+			getline(cin, workout2);
+
+			cout << "Please enter weight followed by repitions, separated by a space." << endl;
+
+			cin >> weight2 >> reps2;
+
+			cout << "Please enter your third exercise." << endl;
+
+			cin.ignore();
+			getline(cin, workout3);
+
+			cout << "Please enter weight followed by repitions, separated by a space." << endl;
+
+			cin >> weight3 >> reps3;
+
+			cout << "Please enter your fourth exercise." << endl;
+
+			cin.ignore();
+			getline(cin, workout4);
+
+			cout << "Please enter weight followed by repitions, separated by a space." << endl;
+
+			cin >> weight4 >> reps4;
+
+			cout << "Please enter your fifth exercise." << endl;
+
+			cin.ignore();
+			getline(cin, workout5);
+
+			cout << "Please enter weight followed by repitions, separated by a space." << endl;
+
+			cin >> weight5 >> reps5;
+
+			cout << "Please enter your sixth exercise." << endl;
+
+			cin.ignore();
+			getline(cin, workout6);
+
+			cout << "Please enter weight followed by repitions, separated by a space." << endl;
+
+			cin >> weight6 >> reps6;
+
+			cout << endl << "Exercise: " << workout1 << "." << endl;
+			cout << "Weight: " << weight1 << "." << endl;
+			cout << "Reps: " << reps1 << "." << endl;
+
+			cout << "Exercise: " << workout2 << "." << endl;
+			cout << "Weight: " << weight2 << "." << endl;
+			cout << "Reps: " << reps2 << "." << endl;
+
+			cout << "Exercise: " << workout3 << "." << endl;
+			cout << "Weight: " << weight3 << "." << endl;
+			cout << "Reps: " << reps3 << "." << endl;
+
+			cout << "Exercise: " << workout4 << "." << endl;
+			cout << "Weight: " << weight4 << "." << endl;
+			cout << "Reps: " << reps4 << "." << endl;
+
+			cout << "Exercise: " << workout5 << "." << endl;
+			cout << "Weight: " << weight5 << "." << endl;
+			cout << "Reps: " << reps5 << "." << endl;
+
+			cout << "Exercise: " << workout6 << "." << endl;
+			cout << "Weight: " << weight6 << "." << endl;
+			cout << "Reps: " << reps6 << "." << endl;
 
 			break;
 	    }
