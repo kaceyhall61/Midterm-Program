@@ -3,6 +3,7 @@
 #include <cmath>
 #include <string>
 #include <ctime>
+
 #define _CRT_SECURE_NO_WARNINGS		// #define and #pragma included to disable a secure warning
 #pragma warning(disable:4996)		// given by the use of ctime.
 
@@ -11,18 +12,12 @@ using namespace std;
 
 int main() {
 
-	string workout1;
-	string workout2;
-	string strengthOrCardio;
-	string strength = "strength";
-	string cardio = "cardio";
+	string workout1, workout2, workout3, workout4, workout5, workout6;
+	int reps1, reps2, reps3, reps4, reps5, reps6;
+	int weight1, weight2, weight3, weight4, weight5, weight6;
+	int sets1, sets2, sets3, sets4, sets5, sets6;
 	int strengthOrRun;
 	int exerciseAmount;
-	int reps;
-	int reps2;
-	int weight;
-	int weight2;
-	int choice;
 	float distance;
 	float runTime;
 
@@ -37,12 +32,12 @@ int main() {
 
 	cin >> strengthOrRun;
 
-	// Beginning of switch and case to determine amount of exercises and details of those exercises.
+	// Beginning of switch and case to determine type of training and details.
 
 	switch (strengthOrRun)
 	{
 	case 1:
-		cout << "How many different workouts will we track?" << endl;
+		cout << "How many different workouts will we track? (6 max)" << endl;
 
 		cin >> exerciseAmount;
 
@@ -54,13 +49,14 @@ int main() {
 			cin.ignore();
 			getline(cin, workout1);
 
-			cout << "Please enter weight followed by repitions, separated by a space." << endl;
+			cout << "Please enter weight followed by repitions, then amount of sets, separated by spaces. (use 0 for bodyweight)" << endl;
 
-			cin >> weight >> reps;
+			cin >> weight1 >> reps1 >> sets1;
 
-			cout << "Exercise: " << workout1 << "." << endl;
-			cout << "Weight: " << weight << "." << endl;
-			cout << "Reps: " << reps << "." << endl;
+			cout << endl << "Exercise: " << workout1 << "." << endl;
+			cout << "Weight: " << weight1 << " pounds." << endl;
+			cout << "Reps: " << reps1 << "." << endl;
+			cout << "Sets: " << sets1 << "." << endl;
 
 			break;
 	    case 2:
@@ -69,30 +65,309 @@ int main() {
 		cin.ignore();
 		getline(cin, workout1);
 
-		cout << "Please enter weight followed by repitions, separated by a space." << endl;
+		cout << "Please enter weight followed by repitions, then amount of sets, separated by spaces. (use 0 for bodyweight)" << endl;
 
-		cin >> weight >> reps;
+		cin >> weight1 >> reps1 >> sets1;
 
 		cout << "Please enter your second exercise." << endl;
 
 		cin.ignore();
 		getline(cin, workout2);
 
-		cout << "Please enter weight followed by repitions, separated by a space." << endl;
+		cout << "Please enter weight followed by repitions, then amount of sets, separated by spaces. (use 0 for bodyweight)" << endl;
 
-		cin >> weight2 >> reps2;
+		cin >> weight2 >> reps2 >> sets2;
 
-		cout << "Exercise: " << workout1 << "." << endl;
-		cout << "Weight: " << weight << "." << endl;
-		cout << "Reps: " << reps << "." << endl;
+		cout << endl << "Exercise: " << workout1 << "." << endl;
+		cout << "Weight: " << weight1 << " pounds." << endl;
+		cout << "Reps: " << reps1 << "." << endl;
+		cout << "Sets: " << sets1 << "." << endl;
 
 		cout << "Exercise: " << workout2 << "." << endl;
-		cout << "Weight: " << weight2 << "." << endl;
+		cout << "Weight: " << weight2 << " pounds." << endl;
 		cout << "Reps: " << reps2 << "." << endl;
+		cout << "Sets: " << sets2 << "." << endl;
 
 		break;
+		case 3:
+			cout << "What was your first exercise?" << endl;
+
+			cin.ignore();
+			getline(cin, workout1);
+
+			cout << "Please enter weight followed by repitions, then amount of sets, separated by spaces. (use 0 for bodyweight)" << endl;
+
+			cin >> weight1 >> reps1 >> sets1;
+
+			cout << "Please enter your second exercise." << endl;
+
+			cin.ignore();
+			getline(cin, workout2);
+
+			cout << "Please enter weight followed by repitions, then amount of sets, separated by spaces. (use 0 for bodyweight)" << endl;
+
+			cin >> weight2 >> reps2 >> sets2;
+
+			cout << "Please enter your third exercise." << endl;
+
+			cin.ignore();
+			getline(cin, workout3);
+
+			cout << "Please enter weight followed by repitions, then amount of sets, separated by spaces. (use 0 for bodyweight)" << endl;
+
+			cin >> weight3 >> reps3 >> sets3;
+
+			cout << endl << "Exercise: " << workout1 << "." << endl;
+			cout << "Weight: " << weight1 << "." << endl;
+			cout << "Reps: " << reps1 << "." << endl;
+			cout << "Sets: " << sets1 << "." << endl;
+
+			cout << "Exercise: " << workout2 << "." << endl;
+			cout << "Weight: " << weight2 << "." << endl;
+			cout << "Reps: " << reps2 << "." << endl;
+			cout << "Sets: " << sets2 << "." << endl;
+
+			cout << "Exercise: " << workout3 << "." << endl;
+			cout << "Weight: " << weight3 << "." << endl;
+			cout << "Reps: " << reps3 << "." << endl;
+			cout << "Sets: " << sets3 << "." << endl;
+
+			break;
+		case 4:
+			cout << "What was your first exercise?" << endl;
+
+			cin.ignore();
+			getline(cin, workout1);
+
+			cout << "Please enter weight followed by repitions, then amount of sets, separated by spaces. (use 0 for bodyweight)" << endl;
+
+			cin >> weight1 >> reps1 >> sets1;
+
+			cout << "Please enter your second exercise." << endl;
+
+			cin.ignore();
+			getline(cin, workout2);
+
+			cout << "Please enter weight followed by repitions, then amount of sets, separated by spaces. (use 0 for bodyweight)" << endl;
+
+			cin >> weight2 >> reps2 >> sets2;
+
+			cout << "Please enter your third exercise." << endl;
+
+			cin.ignore();
+			getline(cin, workout3);
+
+			cout << "Please enter weight followed by repitions, then amount of sets, separated by spaces. (use 0 for bodyweight)" << endl;
+
+			cin >> weight3 >> reps3 >> sets3;
+
+			cout << "Please enter your fourth exercise." << endl;
+
+			cin.ignore();
+			getline(cin, workout4);
+
+			cout << "Please enter weight followed by repitions, then amount of sets, separated by spaces. (use 0 for bodyweight)" << endl;
+
+			cin >> weight4 >> reps4 >> sets4;
+
+			cout << endl << "Exercise: " << workout1 << "." << endl;
+			cout << "Weight: " << weight1 << "." << endl;
+			cout << "Reps: " << reps1 << "." << endl;
+			cout << "Sets: " << sets1 << "." << endl;
+
+			cout << "Exercise: " << workout2 << "." << endl;
+			cout << "Weight: " << weight2 << "." << endl;
+			cout << "Reps: " << reps2 << "." << endl;
+			cout << "Sets: " << sets2 << "." << endl;
+
+			cout << "Exercise: " << workout3 << "." << endl;
+			cout << "Weight: " << weight3 << "." << endl;
+			cout << "Reps: " << reps3 << "." << endl;
+			cout << "Sets: " << sets3 << "." << endl;
+
+			cout << "Exercise: " << workout4 << "." << endl;
+			cout << "Weight: " << weight4 << "." << endl;
+			cout << "Reps: " << reps4 << "." << endl;
+			cout << "Sets: " << sets4 << "." << endl;
+
+			break;
+		case 5:
+			cout << "What was your first exercise?" << endl;
+
+			cin.ignore();
+			getline(cin, workout1);
+
+			cout << "Please enter weight followed by repitions, then amount of sets, separated by spaces. (use 0 for bodyweight)" << endl;
+
+			cin >> weight1 >> reps1 >> sets1;
+
+			cout << "Please enter your second exercise." << endl;
+
+			cin.ignore();
+			getline(cin, workout2);
+
+			cout << "Please enter weight followed by repitions, then amount of sets, separated by spaces. (use 0 for bodyweight)" << endl;
+
+			cin >> weight2 >> reps2 >> sets2;
+
+			cout << "Please enter your third exercise." << endl;
+
+			cin.ignore();
+			getline(cin, workout3);
+
+			cout << "Please enter weight followed by repitions, then amount of sets, separated by spaces. (use 0 for bodyweight)" << endl;
+
+			cin >> weight3 >> reps3 >> sets3;
+
+			cout << "Please enter your fourth exercise." << endl;
+
+			cin.ignore();
+			getline(cin, workout4);
+
+			cout << "Please enter weight followed by repitions, then amount of sets, separated by spaces. (use 0 for bodyweight)" << endl;
+
+			cin >> weight4 >> reps4 >> sets4;
+
+			cout << "Please enter your fifth exercise." << endl;
+
+			cin.ignore();
+			getline(cin, workout5);
+
+			cout << "Please enter weight followed by repitions, then amount of sets, separated by spaces. (use 0 for bodyweight)" << endl;
+
+			cin >> weight5 >> reps5 >> sets5;
+
+			cout << endl << "Exercise: " << workout1 << "." << endl;
+			cout << "Weight: " << weight1 << "." << endl;
+			cout << "Reps: " << reps1 << "." << endl;
+			cout << "Sets: " << sets1 << "." << endl;
+
+			cout << "Exercise: " << workout2 << "." << endl;
+			cout << "Weight: " << weight2 << "." << endl;
+			cout << "Reps: " << reps2 << "." << endl;
+			cout << "Sets: " << sets2 << "." << endl;
+
+			cout << "Exercise: " << workout3 << "." << endl;
+			cout << "Weight: " << weight3 << "." << endl;
+			cout << "Reps: " << reps3 << "." << endl;
+			cout << "Sets: " << sets3 << "." << endl;
+
+			cout << "Exercise: " << workout4 << "." << endl;
+			cout << "Weight: " << weight4 << "." << endl;
+			cout << "Reps: " << reps4 << "." << endl;
+			cout << "Sets: " << sets4 << "." << endl;
+
+			cout << "Exercise: " << workout5 << "." << endl;
+			cout << "Weight: " << weight5 << "." << endl;
+			cout << "Reps: " << reps5 << "." << endl;
+			cout << "Sets: " << sets5 << "." << endl;
+
+			break;
+		case 6:
+			cout << "What was your first exercise?" << endl;
+
+			cin.ignore();
+			getline(cin, workout1);
+
+			cout << "Please enter weight followed by repitions, then amount of sets, separated by spaces. (use 0 for bodyweight)" << endl;
+
+			cin >> weight1 >> reps1 >> sets1;
+
+			cout << "Please enter your second exercise." << endl;
+
+			cin.ignore();
+			getline(cin, workout2);
+
+			cout << "Please enter weight followed by repitions, then amount of sets, separated by spaces. (use 0 for bodyweight)" << endl;
+
+			cin >> weight2 >> reps2 >> sets2;
+
+			cout << "Please enter your third exercise." << endl;
+
+			cin.ignore();
+			getline(cin, workout3);
+
+			cout << "Please enter weight followed by repitions, then amount of sets, separated by spaces. (use 0 for bodyweight)" << endl;
+
+			cin >> weight3 >> reps3 >> sets3;
+
+			cout << "Please enter your fourth exercise." << endl;
+
+			cin.ignore();
+			getline(cin, workout4);
+
+			cout << "Please enter weight followed by repitions, then amount of sets, separated by spaces. (use 0 for bodyweight)" << endl;
+
+			cin >> weight4 >> reps4 >> sets4;
+
+			cout << "Please enter your fifth exercise." << endl;
+
+			cin.ignore();
+			getline(cin, workout5);
+
+			cout << "Please enter weight followed by repitions, then amount of sets, separated by spaces. (use 0 for bodyweight)" << endl;
+
+			cin >> weight5 >> reps5 >> sets5;
+
+			cout << "Please enter your sixth exercise." << endl;
+
+			cin.ignore();
+			getline(cin, workout6);
+
+			cout << "Please enter weight followed by repitions, then amount of sets, separated by spaces. (use 0 for bodyweight)" << endl;
+
+			cin >> weight6 >> reps6 >> sets6;
+
+			cout << endl << "Exercise: " << workout1 << "." << endl;
+			cout << "Weight: " << weight1 << "." << endl;
+			cout << "Reps: " << reps1 << "." << endl;
+			cout << "Sets: " << sets1 << "." << endl;
+
+			cout << "Exercise: " << workout2 << "." << endl;
+			cout << "Weight: " << weight2 << "." << endl;
+			cout << "Reps: " << reps2 << "." << endl;
+			cout << "Sets: " << sets2 << "." << endl;
+
+			cout << "Exercise: " << workout3 << "." << endl;
+			cout << "Weight: " << weight3 << "." << endl;
+			cout << "Reps: " << reps3 << "." << endl;
+			cout << "Sets: " << sets3 << "." << endl;
+
+			cout << "Exercise: " << workout4 << "." << endl;
+			cout << "Weight: " << weight4 << "." << endl;
+			cout << "Reps: " << reps4 << "." << endl;
+			cout << "Sets: " << sets4 << "." << endl;
+
+			cout << "Exercise: " << workout5 << "." << endl;
+			cout << "Weight: " << weight5 << "." << endl;
+			cout << "Reps: " << reps5 << "." << endl;
+			cout << "Sets: " << sets5 << "." << endl;
+
+			cout << "Exercise: " << workout6 << "." << endl;
+			cout << "Weight: " << weight6 << "." << endl;
+			cout << "Reps: " << reps6 << "." << endl;
+			cout << "Sets: " << sets6 << "." << endl;
+
+			break;
+		default: cout << "Sorry, this program can only handle 6 exercises at the moment. Please try again and enter a number between 1 and 6" << endl;
 	    }
+		break;
+		case 2:
+			cout << "How far did you run today? (enter # of miles)" << endl;
+
+			cin >> distance;
+
+			cout << "How many minutes were you running?" << endl;
+
+			cin >> runTime;
+
+			cout << endl << "Distance: " << distance << " Miles" << endl;
+			cout << "Duration: " << runTime << " Minutes" << endl;
+ 
+			break;
+		default: cout << "Please try again and enter either 1 or 2." << endl;
 	}
+	
 	system("pause");
 	return(0);
 }
